@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+*,
+*::before,
+*::after {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+}
+
+:root {
+          --bright-orange: hsl(31, 77%, 52%);
+          --dark-cyan: hsl(184, 100%, 22%);
+          --darker-cyan: hsl(179, 100%, 13%);
+
+          --light-grey: hsl(0, 0%, 95%);
+          --transparent-white: hsla(0, 0%, 100%, 0.75);
+}
+
+body {
+          background: var(--light-grey) ;
+}
+
+.container {
+          overflow: hidden;
+          padding: 50px 0;
+}
+
+.link {
+          text-align: center;
+}
+
+.link a {
+          text-decoration: none;
+}
+
+.outer-wrapper {
+          width: 100%;
+          max-width: 1440px;
+}
+
+.inner-wrapper {
+          width: 80%;
+          margin: 0 auto;
+}
+
+.flex {
+          color: var(--transparent-white);
+          padding: 30px;
+
+          color: var(--transparent-white);
+          font-family: Lexend Deca;
+}
+
+.flex.one{
+          background: var(--bright-orange);
+          border-radius: 5px 5px 0 0;
+}
+
+.flex.two{
+          background: var(--dark-cyan);
+}
+
+.flex.three{
+          background: var(--darker-cyan);
+          border-radius: 0 0 5px 5px;
+}
+
+img {
+          width: 50px;
+          margin-bottom: 25px;
+}
+
+
+h2 {
+          font-family: big shoulders display;
+          color: var(--light-grey);
+
+          margin-bottom: 15px;
+}
+
+.content {
+          font-size: 12px;
+          line-height: 1.4;
+
+          margin-bottom: 50px;
+}
+
+.btn {
+          background: var(--light-grey);
+          padding: 8px 10px;
+          border-radius: 15px;
+          width: 100px;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          cursor: pointer;
+}
+
+button {
+          border: none;
+          font-family: lexend deca;
+          cursor: pointer;
+}
+
+button.one {
+          color: var(--bright-orange);
+}
+
+button.two {
+          color: var(--dark-cyan);
+}
+
+button.three {
+          color: var(--darker-cyan);
+} 
+
+
+@media (min-width: 700px) {          
+          .outer-wrapper {
+                    height: 80vh;
+                    width: 100%;
+                    
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+          }
+
+          .inner-wrapper {
+                    display: flex;
+          }
+          
+          .flex.one{
+                    border-radius: 5px 0 0 5px;
+                    max-width: 60%;
+          }
+                    
+          .flex.three{
+                    border-radius: 0 5px 5px 0;
+          }
+} 
+
+@media (min-width: 850px) {
+          .content {
+                    width: 85%;
+          }
+} 
+          
